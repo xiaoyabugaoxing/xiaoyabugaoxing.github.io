@@ -1,0 +1,558 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content=",,,," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="三角形12345678.sanjiao&amp;#123;  width: 0;  height: 0;  overflow: hidden;  border-width: 10px;  border-color: transparent red transparent  transparent;  border-style: solid;&amp;#125;
+省略号1234567891011width：200p">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CSS笔记">
+<meta property="og:url" content="http://yoursite.com/css/index.html">
+<meta property="og:site_name" content="Candy">
+<meta property="og:description" content="三角形12345678.sanjiao&amp;#123;  width: 0;  height: 0;  overflow: hidden;  border-width: 10px;  border-color: transparent red transparent  transparent;  border-style: solid;&amp;#125;
+省略号1234567891011width：200p">
+<meta property="og:updated_time" content="2017-03-07T03:32:10.447Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CSS笔记">
+<meta name="twitter:description" content="三角形12345678.sanjiao&amp;#123;  width: 0;  height: 0;  overflow: hidden;  border-width: 10px;  border-color: transparent red transparent  transparent;  border-style: solid;&amp;#125;
+省略号1234567891011width：200p">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/css/"/>
+
+
+
+
+
+  <title>
+  
+
+  
+    CSS笔记 | Candy
+  
+</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Candy</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-css">
+          <a href="/css" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-css3"></i> <br />
+            
+            css笔记
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">CSS笔记</h1>
+
+
+
+</header>
+
+    
+    
+      <h3 id="三角形"><a href="#三角形" class="headerlink" title="三角形"></a>三角形</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.sanjiao&#123;</div><div class="line">  width: 0;</div><div class="line">  height: 0;</div><div class="line">  overflow: hidden;</div><div class="line">  border-width: 10px;</div><div class="line">  border-color: transparent red transparent  transparent;</div><div class="line">  border-style: solid;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="省略号"><a href="#省略号" class="headerlink" title="省略号"></a>省略号</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">width：200px；</div><div class="line">overflow：hidden；</div><div class="line">white-space：nowrap；</div><div class="line">text-overflow：ellipsis；</div><div class="line"></div><div class="line">&lt;!-- 多行省略 --&gt;</div><div class="line">overflow:hidden;</div><div class="line">text-overflow:ellipsis;</div><div class="line">display:-webkit-box;</div><div class="line">-webkit-line-clamp: 2;</div><div class="line">-webkit-box-orient:vertical;</div></pre></td></tr></table></figure>
+<h3 id="鼠标的自定义样式"><a href="#鼠标的自定义样式" class="headerlink" title="鼠标的自定义样式"></a>鼠标的自定义样式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div style=&quot;cursor: url(&apos;../img/pdp_cursor-circle.png&apos;),auto;width: 200px;height: 200px;background: #333&quot;&gt;&lt;/div&gt;</div></pre></td></tr></table></figure>
+<h3 id="background-size"><a href="#background-size" class="headerlink" title="background-size"></a>background-size</h3><p>background-size属于css3新属性，在IE浏览器中有兼容问题</p>
+<p>解决方案：使用滤镜进行优化  代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&apos;../images/login-img.jpg&apos;,sizingMethod=&apos;scale&apos;);</div></pre></td></tr></table></figure>
+<h3 id="placeholder-兼容问题"><a href="#placeholder-兼容问题" class="headerlink" title="placeholder 兼容问题"></a>placeholder 兼容问题</h3><p>placeholder 属于css3新属性，在IE浏览器中IE10以下有兼容性问题</p>
+<p>解决方案：使用jq进行兼容性处理  代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">$(document).ready(function()&#123;   </div><div class="line">   var doc=document,</div><div class="line">    inputs=doc.getElementsByTagName(&apos;input&apos;),</div><div class="line">    supportPlaceholder=&apos;placeholder&apos;in doc.createElement(&apos;input&apos;),</div><div class="line">    </div><div class="line">    placeholder=function(input)&#123;</div><div class="line">     var text=input.getAttribute(&apos;placeholder&apos;),</div><div class="line">     defaultValue=input.defaultValue;</div><div class="line">     if(defaultValue==&apos;&apos;)&#123;</div><div class="line">        input.value=text</div><div class="line">     &#125;</div><div class="line">     input.onfocus=function()&#123;</div><div class="line">        if(input.value===text)</div><div class="line">        &#123;</div><div class="line">            this.value=&apos;&apos;</div><div class="line">        &#125;</div><div class="line">      &#125;;</div><div class="line">     input.onblur=function()&#123;</div><div class="line">        if(input.value===&apos;&apos;)&#123;</div><div class="line">            this.value=text</div><div class="line">        &#125;</div><div class="line">      &#125;</div><div class="line">  &#125;;</div><div class="line">  </div><div class="line">  if(!supportPlaceholder)&#123;</div><div class="line">     for(var i=0,len=inputs.length;i&lt;len;i++)&#123;</div><div class="line">          var input=inputs[i],</div><div class="line">          text=input.getAttribute(&apos;placeholder&apos;);</div><div class="line">          if(input.type===&apos;text&apos;&amp;&amp;text)&#123;</div><div class="line">             placeholder(input)</div><div class="line">          &#125;</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line"> &#125;);</div></pre></td></tr></table></figure>
+<h3 id="文本内容禁止选中"><a href="#文本内容禁止选中" class="headerlink" title="文本内容禁止选中"></a>文本内容禁止选中</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.disable-selected&#123;</div><div class="line">          -moz-user-select: -moz-none;</div><div class="line">          -moz-user-select: none;</div><div class="line">          -o-user-select:none;</div><div class="line">          -webkit-user-select:none;</div><div class="line">          -ms-user-select:none;</div><div class="line">          user-select:none;</div><div class="line">     &#125;</div></pre></td></tr></table></figure>
+<h3 id="去除ios系统表单元素默认样式"><a href="#去除ios系统表单元素默认样式" class="headerlink" title="去除ios系统表单元素默认样式"></a>去除ios系统表单元素默认样式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-appearance:none;</div></pre></td></tr></table></figure>
+<p>注：适用于表单元素 input &amp;&amp; textarea</p>
+<h3 id="css透明度"><a href="#css透明度" class="headerlink" title="css透明度"></a>css透明度</h3><p>1.透明度被继承问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.bg&#123;</div><div class="line">    background:rgba(0,0,0,0.3)</div><div class="line">&#125;</div><div class="line">/*代替*/</div><div class="line">.bg&#123;</div><div class="line">    background-color:#000;</div><div class="line">    opacity:.3;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>2.透明度兼容问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">opacity: 0;</div><div class="line">filter:alpha(opacity=0);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">background: rgb(0, 0, 0);    /*不支持rgba的浏览器*/</div><div class="line">background: rgba(0,0,0,.5);  /*支持rgba的浏览器*/</div><div class="line">filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);    /*IE8支持*/</div></pre></td></tr></table></figure>
+<h3 id="边框处理技巧"><a href="#边框处理技巧" class="headerlink" title="边框处理技巧"></a>边框处理技巧</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">适用于hover和click边框线大于原有的</div><div class="line">outline: 1px solid #D4D4D4; /*轮廓线不会占据空间，也不一定是矩形。*/</div><div class="line">border: 1px solid #D4D4D4;/*轮廓线会占据空间*/</div></pre></td></tr></table></figure>
+
+    
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.JPG"
+               alt="yatingSun" />
+          <p class="site-author-name" itemprop="name">yatingSun</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yatingSun</span>
+</div>
+
+
+<div class="powered-by">
+  学习不止
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
